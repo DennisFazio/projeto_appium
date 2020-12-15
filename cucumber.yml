@@ -1,0 +1,13 @@
+default: -p dot 
+
+
+#modo de execução
+bdd: --format pretty
+dot: --format progress
+
+#Relatórios
+html: --format html --out=logs/html/relatorio.html
+json: --format json --out=logs/json/report.json
+
+#Repetir teste caso falhe
+retry: --retry 1
